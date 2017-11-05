@@ -1,0 +1,5 @@
+#!/bin/bash
+
+killall mkiss
+killall kissattach
+killall socat

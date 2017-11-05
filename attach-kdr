@@ -1,0 +1,8 @@
+#!/bin/bash
+
+socat -d -d pty,raw,echo=0,link=/tmp/DatExt pty,raw,echo=0,link=/tmp/DatInt &
+socat -d -d pty,raw,echo=0,link=/tmp/CmdExt pty,raw,echo=0,link=/tmp/CmdInt &
+sleep  1
+kissattach /tmp/DatExt kdr0
+kissattach /tmp/CmdExt kdr1
+mkiss -s 230400 /dev/ttyUSB0 /tmp/DatInt /tmp/CmdInt
