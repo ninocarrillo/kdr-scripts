@@ -1,2 +1,6 @@
 # kdr-scripts
-text scripts to support KISS digital radio development
+BASH scripts to support KISS Digital Radio development.
+
+Required linux packages:
+- ax25-tools
+- socat
