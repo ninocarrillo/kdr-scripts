@@ -1,9 +1,17 @@
 #!/bin/bash
 while [ 1 ]; do
 	STR="$(date)"
-	beacon -s kdr0 "${STR}"
-	beacon -s kdr0 "KK4HEJ DATA RADIO                           "
-	beacon -s kdr0 "~~"
-	sleep .5
+	beacon -s kdr2 "${STR} KK4HEJ A"
+	beacon -s kdr2 "${STR} KK4HEJ B"
+	beacon -s kdr2 "3                                            "
+#	beacon -s kdr0 "4                                            "
+#	beacon -s kdr0 "5                                            "
+#	beacon -s kdr0 "6                                            "
+#	beacon -s kdr0 "7                                            "
+#	beacon -s kdr0 "8                                              "
+#	beacon -s kdr0 "9th packet"
+#	beacon -s kdr0 "tenth packet"
+#	beacon -s kdr0 "Eleventh packet"
+	sleep 30
 
 done
