@@ -1,0 +1,9 @@
+#!/bin/bash
+# Retrieve and install programs to use with digital radio.
+apt-get update
+apt-get upgrade
+apt-get install socat ax25-tools openjdk-7-jre librxtx-java unzip aprx
+mkdir ~/YAAC
+wget www.ka2ddo.org/ka2ddo/YAAC.zip
+unzip YYAC.zip -d ~/YAAC
+cp aprx-txrx-apris.conf /etc/aprx.conf
