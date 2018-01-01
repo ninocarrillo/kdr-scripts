@@ -7,3 +7,6 @@ cd aprx
 make clean
 make
 make install
+cd ..
+cp /etc/aprx.conf aprx.conf.bak
+cp ./aprx.conf /etc/aprx.conf
