@@ -1,0 +1,9 @@
+#!/bin/bash
+# Retrieves aprx source from github. Then compiles and installs.
+# Installs custom aprx.conf to /etc.
+git clone https://github.com/PhirePhly/aprx
+cd aprx
+./configure
+make clean
+make
+make install
