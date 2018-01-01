@@ -5,5 +5,5 @@ apt-get upgrade
 apt-get install socat ax25-tools openjdk-7-jre librxtx-java unzip gpsd gpsd-clients
 mkdir ~/YAAC
 wget www.ka2ddo.org/ka2ddo/YAAC.zip
-unzip YYAC.zip -d ~/YAAC
+unzip YAAC.zip -d ~/YAAC
 ./get-aprx
