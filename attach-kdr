@@ -5,4 +5,4 @@ socat -d -d pty,raw,echo=0,link=/tmp/CmdExt pty,raw,echo=0,link=/tmp/CmdInt &
 sleep  1
 kissattach /tmp/DatExt AXHAT0
 kissattach /tmp/CmdExt AXHAT1
-mkiss -s 115200 /dev/ttyUSB0 /tmp/DatInt /tmp/CmdInt
+mkiss -s 115200 /dev/serial0 /tmp/DatInt /tmp/CmdInt
