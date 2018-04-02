@@ -1,0 +1,11 @@
+!/bin/bash
+
+# I've noticed the first two uses of "beacon" after "kissattach"
+# appends two garbage bytes onto the end of the packet before the
+# termination flag.
+
+beacon -s AXHAT1 "rspd 5000"
+beacon -s AXHAT1 "tdev 5000"
+beacon -s AXHAT1 "rdev 5000"
+beacon -s AXHAT1 "tspd 5000"
+beacon -s AXHAT1 "aply"
